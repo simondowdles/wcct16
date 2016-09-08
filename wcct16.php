@@ -14,7 +14,7 @@ Text Domain: wcct16
 namespace WCCT;
 
 function wcct_save_option( $name, $value ){
-	update_option( $name, $value );
+	update_option( 'wcct_' . $name, $value ); // Will cause test o fail because it has no wcct_ prefix
 }
 
 function wcct_get_option( $name ){
