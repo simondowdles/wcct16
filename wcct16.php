@@ -19,7 +19,7 @@ function wcct_save_option( $name, $value ){
 
 function wcct_get_option( $name ){
 	$option = get_option( 'wcct_' . $name );
-	return get_option( 'wcct_' . $name );
+	return $option;
 }
 
 function wcct_save_post_meta( $post_id, $meta_key, $meta_value ){
